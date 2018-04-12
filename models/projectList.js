@@ -25,7 +25,7 @@ projectList = [
     },
     {
         name: "Tic Tac Toe",
-        tools: ["css", "javascript", "nodejs"],
+        tools: ["css3", "javascript", "nodejs"],
         description: `Multiplayer game of Tic Tac Toe that uses Socket.io to 
         connect players across multiple browsers.`,
         link: "https://chasestictactoe.herokuapp.com/",
