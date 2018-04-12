@@ -1,0 +1,48 @@
+<% include partials/header %>
+
+<div class="parallax">
+
+    <div class="parallax-layer parallax-layer-back">
+        <div class="works-background background"></div>
+    </div>
+
+    <div class="parallax-layer parallax-layer-base">
+        <div class="head-container">
+            <h1>Works</h1>
+            <p class="subtitle">Collection of Past Projects</p>
+        </div>
+
+        <div class="body-background">
+            <!-- <div class="body-container"> -->
+
+                <% projectList.forEach(function(project) { %>
+                <div class="project-card">
+                    <div class="project-preview"></div>
+                    <div class="project-info">
+                        <h3><%= project.name %></h3>
+
+                        <p class="project-tech-icons">
+                            <% project.tools.forEach(function(tool) { %>
+                                <i class=<%= "devicon-" + tool + "-plain" %> title=<%= tool %>></i>
+                            <% }); %>
+                        </p>
+
+                        <p class="project-description"><%= project.description %></p>
+                        <div class="project-links">
+                            <a href="#" class="button-left button-left-small button">
+                                <p>Github</p>
+                            </a>
+                            <a href="#" class="button-right-small button">
+                                <p>Live Site</p>
+                            </a>
+                        </div>
+                        <hr>
+                    </div>
+
+                </div>
+                <% }); %>
+
+            <!-- </div> -->
+        </div>
+ 
+<% include partials/footer %>

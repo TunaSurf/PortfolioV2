@@ -1,0 +1,70 @@
+<% include partials/header %>
+
+<div id="portfolio-bg"></div>
+<div class="splash-container">
+    <div class="splash-text">
+        <h1>Chase Burgess</h1>
+        <h2>Web Developer</h2>
+    </div>
+    <div id="down-arrow">
+        <img src="../assets/down-arrow.svg">
+        <img src="../assets/down-arrow.svg">
+    </div>
+</div>
+<div id="about-projects-head">
+    <h1>Work</h1>
+    <p>
+         As a developer + designer based in Virginia Beach, I work to create 
+         easy-to-use online experiences by keeping up to date and 
+         experimenting with relevant technologies.
+    </p>
+</div
+<% projectList.forEach(function(project) { %>
+<div class="project-container">
+    <div class="project-bg-container" style=<%= "background:#" + project.color %>>
+        <div class="project-image" style=<%= "background-image:url(" + project.image + ")" %>></div>
+        <div class="project-bg-shade"></div>
+        <h1><%= project.name %></h1>
+    </div>
+    <div class="project-summary">
+        <div class="ps-border" 
+             style=<%= "background-image:url(data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2020%2016.4%22%20style%3D%22enable-background%3Anew%200%200%2020%2016.4%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%20fill%3D%22%23" + project.color + "%22%3E%0A%09%3Cpolygon%20points%3D%2210%2C12%200%2C2%200%2C0.6%2010%2C10.6%2020%2C0.6%2020%2C2%20%09%22/%3E%0A%09%3Cpolygon%20points%3D%225.8%2C0%2010%2C4.2%2014.2%2C0%2012.8%2C0%2010%2C2.8%207.2%2C0%20%09%22/%3E%0A%09%3Cpolygon%20points%3D%2210%2C16.4%200%2C6.4%200%2C5%2010%2C15%2020%2C5%2020%2C6.4%20%09%22/%3E%0A%3C/g%3E%0A%3C/svg%3E);"%>>
+        </div>
+        <div class="ps-container">
+            <div class="ps-item-left">
+                <h3>
+                    <%= project.name %>
+                </h3>
+                <ul>
+                    <% project.tools.forEach(function(tool) { %>
+                        <li>
+                            <i class=<%="devicon-" + tool + "-plain" %> title=
+                                <%= tool %>></i>
+                        </li>
+                        <% }); %>
+                </ul>
+                <a class="site-link" href=<%=project.link %>>
+                    <span class="link-text">View Site</span>
+                    <span class="link-style" style=<%="background:#" + project.color %>></span>
+                </a>
+                <a href=<%=project.source %>>
+                    <span class="link-text">View Source Code</span>
+                    <span class="link-style" style=<%="background:#" + project.color %>></span>
+                </a>
+            </div>
+            <div class="ps-item-right">
+                <p>
+                    <%= project.description %>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<% }); %>
+
+        
+
+
+
+
+<% include partials/footer %>
