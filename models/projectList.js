@@ -2,11 +2,8 @@ projectList = [
     {
         name: "ListRank",
         tools: ["css3", "javascript", "react"],
-        description: `Often times, my friends like to create lists of potential 
-        restaurants/bars to visit, and rank them from least to most exciting to 
-        determine where we will spend our evening. ListRank is a tool I created 
-        to simplify this process. Built with React and kept as simple as possible 
-        to promote ease-of-use during nights out.`,
+        description: `Customizable rankings app built with React. Designed for 
+        simplicity, this app is meant to be passed around among a group of friends.`,
         link: "https://tunasurf.github.io/ListRank/",
         source: "https://github.com/TunaSurf/ListRank",
         image: "../assets/ListRank-preview.jpg",
@@ -15,9 +12,9 @@ projectList = [
     {
         name: "Pokedex",
         tools: ["css3", "javascript", "react"],
-        description: `My pokedex is a list of pokemon and basic information 
-        pulled from pokeapi. Built as an introduction for myself to component 
-        based front-end frameworks through the use of React and React-Router.`,
+        description: `Index of all pokemon and their basic information always up to 
+        date through the use of pokeapi. Built with React and React-Router for a 
+        streamlined experience.`,
         link: "https://chasepokedex.herokuapp.com/",
         source: "https://github.com/TunaSurf/pokedex",
         image: "../assets/pokedex-preview.jpg",
