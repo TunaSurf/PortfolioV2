@@ -2,7 +2,8 @@ projectList = [
     {
         name: "ListRank",
         tools: ["css3", "javascript", "react"],
-        description: `test`,
+        description: `Customizable rankings app built with React. Designed for 
+        simplicity, this app is meant to be passed around among a group of friends.`,
         link: "https://tunasurf.github.io/ListRank/",
         source: "https://github.com/TunaSurf/ListRank",
         image: "../assets/ListRank-preview.jpg",
@@ -11,7 +12,9 @@ projectList = [
     {
         name: "Pokedex",
         tools: ["css3", "javascript", "react"],
-        description: `test`,
+        description: `Index of all pokemon and their basic information always up to 
+        date through the use of pokeapi. Built with React and React-Router for a 
+        streamlined experience.`,
         link: "https://chasepokedex.herokuapp.com/",
         source: "https://github.com/TunaSurf/pokedex",
         image: "../assets/pokedex-preview.jpg",
