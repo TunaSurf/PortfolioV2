@@ -1,5 +1,23 @@
 projectList = [
     {
+        name: "Should I Shred",
+        tools: ["css3", "javascript", "react", "nodejs", "mongodb"],
+        description: `Surf conditions tracker built with React, NodeJs, Express, and MongoDB. 
+        This app was designed to be used for quickly gathering relevant surf information for 100's 
+        of locations around the US. Project priorities included ease of use to help foster a quick 
+        decision as to whether the user should grab their board or not, as well as slick animations 
+        for a pleasant experience. 
+        <br>
+        <br>
+        Note that reliable tide data was not easily accessible for each location and was therefore deamed
+        beyond the scope of this project. As a result, the tide data displayed for each location is
+        randomly generated on page load.`,
+        link: "https://should-i-shred.herokuapp.com/",
+        source: "https://github.com/TunaSurf/ShouldIShred",
+        image: "../assets/shred-preview.jpg",
+        color: "40AFAA"
+    },
+    {
         name: "ListRank",
         tools: ["css3", "javascript", "react"],
         description: `Customizable rankings app built with React. Designed for 
